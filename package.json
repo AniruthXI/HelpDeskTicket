@@ -1,0 +1,13 @@
+{
+  "name": "helpdesk-system",
+  "version": "1.0.0",
+  "scripts": {
+    "frontend": "cd helpdesk-frontend && npm run dev",
+    "backend": "cd helpdesk-backend && npm run dev",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "install-all": "npm install && cd helpdesk-frontend && npm install && cd ../helpdesk-backend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
